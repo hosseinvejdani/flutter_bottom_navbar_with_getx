@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bottom_navbar_with_getx/routes/names.dart';
-import 'package:flutter_bottom_navbar_with_getx/routes/pages.dart';
 import 'package:get/get.dart';
+
+import 'src/src.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,11 +12,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: AppPageName.home,
+      initialRoute: AppPageNames.home,
       defaultTransition: Transition.fade,
-      getPages: AppRoute.pages,
+      onGenerateRoute: AppRoute.onGenerateRoute,
     );
   }
 }
