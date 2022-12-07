@@ -17,6 +17,7 @@ class HomePage extends GetView<HomeController> {
       ),
       bottomNavigationBar: Obx(
         () => NavigationBar(
+          height: 65, // the default is 80
           destinations: const <NavigationDestination>[
             NavigationDestination(
               icon: Icon(Icons.search),
