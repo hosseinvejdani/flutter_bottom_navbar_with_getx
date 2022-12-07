@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-import 'browse_controller.dart';
+import '../../src.dart';
 
 class BrowseBinding extends Bindings {
   @override

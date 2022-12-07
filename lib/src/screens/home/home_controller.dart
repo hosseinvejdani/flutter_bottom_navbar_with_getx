@@ -4,8 +4,6 @@ import 'package:get/get.dart';
 import '../../src.dart';
 
 class HomeController extends GetxController {
-  static HomeController get to => Get.find();
-
   var currentIndex = 0.obs;
   final pages = AppPageNames.bottomNavbarNames;
   final labels = AppPageNames.bottomNavbarNames.map((name) => name.substring(1)).toList();
@@ -14,11 +12,6 @@ class HomeController extends GetxController {
     Icon(Icons.history),
     Icon(Icons.settings)
   ];
-
-  @override
-  void onInit() {
-    super.onInit();
-  }
 
   void changePage(int index) {
     if (currentIndex.value != index) {

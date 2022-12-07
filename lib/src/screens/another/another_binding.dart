@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-import 'another_controller.dart';
+import '../../src.dart';
 
 class AnotherBinding extends Bindings {
   @override

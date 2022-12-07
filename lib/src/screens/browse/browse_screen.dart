@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'browse_controller.dart';
+import '../../src.dart';
 
 class BrowsePage extends StatelessWidget {
   const BrowsePage({super.key});

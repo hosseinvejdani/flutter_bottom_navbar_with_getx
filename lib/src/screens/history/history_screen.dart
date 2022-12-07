@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'history_controller.dart';
+import '../../src.dart';
 
 class HistoryPage extends StatelessWidget {
   const HistoryPage({super.key});

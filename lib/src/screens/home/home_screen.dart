@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../routes/names.dart';
-import 'home_controller.dart';
+import '../../src.dart';
 
 class HomePage extends GetView<HomeController> {
   const HomePage({super.key});
@@ -12,7 +11,7 @@ class HomePage extends GetView<HomeController> {
     return Scaffold(
       body: Navigator(
         key: Get.nestedKey(1),
-        initialRoute: AppPageNames.browse,
+        initialRoute: controller.pages[0],
         onGenerateRoute: controller.bottomNavBarOnGenerateRoute,
       ),
       bottomNavigationBar: Obx(

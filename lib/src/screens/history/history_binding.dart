@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-import 'history_controller.dart';
+import '../../src.dart';
 
 class HistoryBinding extends Bindings {
   @override

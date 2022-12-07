@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'another_controller.dart';
+import '../../src.dart';
 
 class AnotherPage extends StatelessWidget {
   const AnotherPage({super.key});
