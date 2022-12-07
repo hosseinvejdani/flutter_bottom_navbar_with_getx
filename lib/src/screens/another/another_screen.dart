@@ -9,7 +9,7 @@ class AnotherPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('History')),
+      appBar: AppBar(centerTitle: true, title: const Text('History')),
       body: Center(
         child: Text(Get.find<AnotherController>().title.value),
       ),

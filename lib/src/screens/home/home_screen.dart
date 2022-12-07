@@ -18,18 +18,18 @@ class HomePage extends GetView<HomeController> {
       bottomNavigationBar: Obx(
         () => NavigationBar(
           height: 65, // the default is 80
-          destinations: const <NavigationDestination>[
+          destinations: <NavigationDestination>[
             NavigationDestination(
-              icon: Icon(Icons.search),
-              label: 'Browse',
+              icon: controller.icons[0],
+              label: controller.labels[0],
             ),
             NavigationDestination(
-              icon: Icon(Icons.history),
-              label: 'History',
+              icon: controller.icons[1],
+              label: controller.labels[1],
             ),
             NavigationDestination(
-              icon: Icon(Icons.settings),
-              label: 'Settings',
+              icon: controller.icons[2],
+              label: controller.labels[2],
             ),
           ],
           selectedIndex: controller.currentIndex.value,
