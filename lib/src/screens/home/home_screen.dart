@@ -16,24 +16,23 @@ class HomePage extends GetView<HomeController> {
         onGenerateRoute: controller.bottomNavBarOnGenerateRoute,
       ),
       bottomNavigationBar: Obx(
-        () => BottomNavigationBar(
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
+        () => NavigationBar(
+          destinations: const <NavigationDestination>[
+            NavigationDestination(
               icon: Icon(Icons.search),
               label: 'Browse',
             ),
-            BottomNavigationBarItem(
+            NavigationDestination(
               icon: Icon(Icons.history),
               label: 'History',
             ),
-            BottomNavigationBarItem(
+            NavigationDestination(
               icon: Icon(Icons.settings),
               label: 'Settings',
             ),
           ],
-          currentIndex: controller.currentIndex.value,
-          selectedItemColor: Colors.pink,
-          onTap: controller.changePage,
+          selectedIndex: controller.currentIndex.value,
+          onDestinationSelected: controller.changePage,
         ),
       ),
     );
