@@ -1,0 +1,18 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import 'another_controller.dart';
+
+class AnotherPage extends StatelessWidget {
+  const AnotherPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('History')),
+      body: Center(
+        child: Text(Get.find<AnotherController>().title.value),
+      ),
+    );
+  }
+}
